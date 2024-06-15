@@ -1,0 +1,735 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* the Heade banner */
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right: 3em;
+    height: 2.5em;
+    
+}
+.header p {
+    color: white;
+   padding-top: 0.7em;
+   font-size: 0.9em;
+}
+
+
+.head1 {
+    display: flex;
+}
+.head2 {
+    display: flex;
+    gap: 1em;
+}
+.head1 p {
+    padding-right: 0.5em;
+    
+}
+.shop {
+    color: white;
+    font-size: 0.9em;
+    position: relative;
+    text-decoration: underline;
+    align-items: center;
+    display: flex;
+    margin-top: 0.1em;
+    text-underline-offset: 3px;
+}
+.shop::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.60);
+    height: 1px;
+    width: 0;
+    left: 0;
+    top: 27px;
+    transition: 0.3s;
+}
+.shop:hover {
+    color: rgba(255, 255, 255, 0.30);
+}
+.shop:hover::after {
+    width: 100%;
+}
+
+/* Nav Bar */
+
+.logo {
+    height: 2em;
+ 
+}
+.navigation {
+    padding-left: 3em;
+    padding-right: 1.3em;
+    height: 6em;
+}
+
+.navbar-nav {
+    margin-left: 10em;
+} 
+.nav-item a {
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+.icons {
+    width: 17em;
+}
+
+.icons i {
+    margin-right: 1.7em;
+    font-size: 1.2em;
+}
+
+/* hero slider */
+
+.mycoursal {
+    height: 40em;
+}
+.mycoursal img {
+    height: 40em;
+}
+.rest {
+    position: relative;
+}
+.rest1 {
+    text-align: left;
+    position: absolute;
+    top: 15em;
+    left: 10em;
+    width: 32em;
+}
+.rest1 h5 {
+    font-size: 4em;
+}
+.rest1 p {
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.726);
+}
+.rest1 b {
+    color: black;
+}
+.rest1 a {
+    font-size: 1.5em;
+    color: black;
+}
+
+/* Section 1: SHOP BY CATEGORY */
+
+.section1 {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+}
+.section1 h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 3em;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.grid1a, .grid2a, .grid3a, .grid4a, .grid5a {
+    display: flex;
+    justify-content: left;
+    gap: 0.8em;
+}
+.grid1a, .grid2a, .grid3a, .grid4a, .grid5a img {
+    height: 5em;
+}
+.grid1a img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1s;
+}
+.grid2a img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1s;
+}
+.grid2a img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1s;
+}
+.grid3a img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1s;
+}
+.grid4a img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1s;
+}
+.grid5a img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.grid1b, .grid2b, .grid3b, .grid4b, .grid5b {
+    padding-top: 1.2em;
+}
+.grid1b, .grid2b, .grid3b, .grid4b, .grid5b h3 {
+    margin-bottom: 0.1em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.grid1b, .grid2b, .grid3b, .grid4b, .grid5b p {
+    font-size: 0.85em;
+}
+
+/* Section 2 */
+
+.section2 {
+    padding-bottom: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+    text-align: center;
+}
+.section2 img {
+    height: 35em;
+    padding-bottom: 1.3em;
+}
+.section2 img:hover {
+    filter: grayscale(0.5);
+    backdrop-filter: 10em;
+}
+.section2 p {
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+/* Section 3: BESTSELLERS */
+
+.section3 {
+    padding: 3em;
+}
+.section3 h2 {
+    padding-bottom: 1.3em;
+}
+.bs1, .bs11 {
+    height: 24em;
+    padding-bottom: 1em;
+}
+.bsimg1 {
+    position: relative;
+    float: left;
+}
+.bsimg1 .bs11 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.bsimg1:hover .bs11 {
+    display: block;
+}
+.bs2, .bs22 {
+    height: 24em;
+    padding-bottom: 1em;
+}
+.bs3, .bs33 {
+    height: 24em;
+    padding-bottom: 1em;
+}
+.bs4, .bs44 {
+    height: 24em;
+    padding-bottom: 1em;
+}
+.bsimg2 {
+    position: relative;
+    float: left;
+}
+.bsimg3 {
+    position: relative;
+    float: left;
+}
+.bsimg4 {
+    position: relative;
+    float: left;
+}
+.bsimg2 .bs22 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.bsimg3 .bs33 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.bsimg4 .bs44 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.bsimg2:hover .bs22 {
+    display: block;
+}
+.bsimg3:hover .bs33 {
+    display: block;
+}
+.bsimg4:hover .bs44 {
+    display: block;
+}
+.bs h3 {
+    font-size: large;
+    font-weight: 600;
+}
+.bs p {
+    margin-bottom: 0.3em;
+}
+.price {
+    display: flex;
+    justify-content: left;
+    gap: 0.5em;
+}
+.pricedash {
+    color: gray;
+    text-decoration: line-through;
+}
+
+/* Section 4 */
+
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.section4a img {
+    width: 100%;
+    height: 100%;
+}
+.section4b {
+    position: absolute;
+    bottom: 40%;
+    left: 13%;
+    text-align: center;
+}
+.section4b p {
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.781);
+}
+.section4b h2 {
+    font-size: 4.5em;
+}
+.section4c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.section4c p {
+    font-size: 1em;
+    margin-top: 1em;
+}
+.section4c a {
+    color: black;
+}
+
+/* Section 5:NEW PRODUCTS */
+
+.section5 {
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 5em;
+}
+.section5 h2 {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.bs4 {
+    height: 23.81em;
+}
+
+/* Section 6 */
+
+.section6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.section6a img {
+    width: 100%;
+    height: 100%;
+}
+.section6b {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
+.section6b p {
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.781);
+    margin-top: -1em;
+}
+.section6b h2 {
+    font-size: 3em;
+}
+
+/* Section 7: subscription */
+
+.section7 {
+    text-align: center;
+    padding-bottom: 5em;
+}
+.section7 h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.section7 p {
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.705);
+    padding-bottom: 1.2em;
+}
+input {
+    width: 35%;
+    padding: 0.8em 0.5em;
+    background-color: rgb(233, 233, 233);
+    color: rgba(0, 0, 0, 0.452);
+    border: none;
+}
+input[type=submit] {
+    background-color: black;
+    color: white;
+    width: 10%;
+}
+
+/* Section 8: the footer */
+.section8 {
+    padding-bottom: 3em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.253);
+}
+
+.section8 h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+    padding-bottom: 1em;
+}
+.section8 li {
+    list-style: none;
+    padding-bottom: 1.1em;
+    font-size: 1em;
+    margin-left: -2em;
+}
+.section8 li:hover {
+    color: rgba(255, 0, 0, 0.582);
+}
+
+/* Section 9; footer below */
+
+.section9 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+.section9a i {
+    font-size: 1.3em;
+    padding-left: 0.9em;
+    color: gray;
+}
+.section9b {
+    align-content: center;
+}
+.section9b p {
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.5);
+}
+.section9b i {
+    font-size: 0.7em;
+}
+
+
+@media (max-width: 768px) {
+    /* * {
+        border: 1px solid red;
+    } */
+
+     /* the Heade banner */
+
+    .head2 {
+        display: none;
+    }
+
+    .head1 p {
+        font-size: 0.6em;
+        width: 19.3em;
+        padding-top: 1.5em;
+
+    }
+    .head1 a {
+        font-size: 0.6em;
+        width: 10em;
+    }
+
+    /* Nav Bar */
+
+    .logo {
+        height: 1em;
+        position: absolute;
+        left: 5%; 
+        top: 40%;
+    }
+
+    .navigation {
+        position: relative;
+        height: 5em;
+    }
+
+    .persons {
+        display: none;
+    }
+
+    .icons {
+        position: absolute;
+        bottom: 32%;
+        left: 58%;
+        width: 10em;
+    }
+
+    .icons i {
+        font-size:1.2em ;
+        margin-right: 0.6em;
+    }
+
+    .navbar-toggler {
+        border: none;
+        position: absolute;
+        left: 84%;  
+    }
+
+    /* hero slider */
+
+    .mycoursal {
+        height: 20em;
+    }
+    .mycoursal img {
+        height: 20em;
+    }
+    .rest {
+        position: relative;
+    }
+    .rest1 {
+        text-align: left;
+        /* position: absolute; */
+        top: 15em;
+        left: 10em;
+        width: 32em;
+    }
+    .rest1 h5 {
+        font-size: 4em;
+    }
+    .rest1 p {
+        font-size: 1.1em;
+        color: rgba(0, 0, 0, 0.726);
+    }
+    .rest1 b {
+        color: black;
+    }
+    .rest1 a {
+        font-size: 1.5em;
+        color: black;
+    }
+
+    /* Section 1: SHOP BY CATEGORY */
+
+    .grid3, .grid4, .grid5 {
+        display: none;
+    }
+    .section1 h2 {
+        font-size: 1.2em;
+        padding-left: 1em;
+        padding-bottom: 0.8em;
+        padding-top: 2.2em;
+    }
+    .grid1a, .grid2a, .grid3a, .grid4a, .grid5a {
+        display: flex;
+        justify-content: left;
+        gap: 0.1em;
+    }
+    .grid {
+      justify-content: center;
+    }
+    .grid1 {
+        margin-right: 1.6em;
+    }
+
+    /* Section 2 */
+
+    .section2 {
+        flex-direction: column;
+    }
+    .section2a img {
+        height: 27em;
+    }
+    .section2b img {
+        height: 15em;
+    }
+
+    /* Section 3: BESTSELLERS */
+
+    .section3 {
+        margin-top: -3em;
+    }
+    .section3a {
+    }
+
+    /* Section 4 */
+
+    .section4 {
+        position: relative;
+    }
+    .section4a img {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .section4b {
+        position: absolute;
+        bottom: 1em;
+        left: 6%;
+    }
+    .section4b p {
+        font-size: 0.7em;
+        padding-bottom: 0.1em;
+    }
+    .section4b h2 {
+        font-size: 1.6em;
+        color: black;
+    }
+
+    /* Section 5:NEW PRODUCTS */
+
+    .section5 {
+        padding-left: 1.8em;
+        margin-top: -1.5em;
+    }
+    .section5a {
+        padding-left: 2em;
+    }
+
+    /* Section 6 */
+    
+    .section6 {
+        position: relative;
+    }
+    .section6a img {
+        justify-content: center;
+        height: 19.5em;
+        width: 25em;
+        padding-left: 1.3em;
+    }
+    .section6b {
+        position: absolute;
+        bottom: 6em;
+        left: 3em;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+    .section6b p {
+        font-size: 1.2em;
+        padding-bottom: 0.5em;
+        margin-top: -1.5em;
+        width: 16em;
+        color: gray;
+        padding-right: 1.5em;
+    }
+    .section6b h2 {
+        font-size: 2em;
+        color: black;
+    }
+    .section6b a {
+        color: rgba(0, 0, 0, 0.575);
+    }
+    .section6c {
+        margin-bottom: -0.1em;
+    }
+    /* Section 7: subscription */
+    .section7 {
+        text-align: center;
+        padding-bottom: 3em;
+    }
+    .section7 h3 {
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    .section7 p {
+        font-size: 1.1em;
+        color: rgba(0, 0, 0, 0.705);
+        padding-bottom: 1em;
+    }
+    input {
+        width: 70%;
+        padding: 0.8em 0.5em;
+        background-color: rgb(233, 233, 233);
+        color: rgba(0, 0, 0, 0.452);
+        border: none;
+    }
+    input[type=submit] {
+        background-color: black;
+        color: white;
+        width: 25%;
+    }
+    /* the footer */
+    .section8 {
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .section8 h3 {
+        font-size: 1.8em;
+        margin-left: -0.5em;
+    }
+    .section8 li {
+        font-size: 1.3em;
+        padding-bottom: 0.3em;
+    }
+    .section8 ul {
+        padding-bottom: 1.5em;
+        margin-top: -2em;
+    }
+    .section9 {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+}
+
